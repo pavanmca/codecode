@@ -12,7 +12,7 @@ public class dijkastras {
         cost[start]=0;
         Set<Integer> known = new HashSet<>();
         //run dijkastra's algorithm to generate cost array
-        dijkastras(graph,cost,known);
+        dijkastras_algorithm(graph,cost,known);
         //print cost
         System.out.println("Final cost array: ");
         for(int n:cost){
@@ -20,7 +20,7 @@ public class dijkastras {
         }
         
     }
-    private static void dijkastras(Integer[][] graph,Integer[] cost, Set<Integer> known){
+    private static void dijkastras_algorithm(Integer[][] graph,Integer[] cost, Set<Integer> known){
         //run till known. size eqlas to total vertices (visited all nodes)
         while(known.size()!=graph.length){
             //get the verttex with minimum cost
