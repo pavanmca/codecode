@@ -1,5 +1,6 @@
 
-public class Main {
+import java.util.*;
+public class dijkastras {
     public static void main(String[] args) {
         System.out.println("Graph: Adjacency Matrix: ");
         int vertices=8;
