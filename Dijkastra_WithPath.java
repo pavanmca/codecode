@@ -42,6 +42,7 @@ public class Dijkastra_WithPath {
             if(neighbors.size()==0) continue;
             //loop through all neighbors and update cost array if new cost is less than current cost
             for(int neighbor:neighbors){
+                if(known.contains(neighbor)) continue;
                 if(cost[neighbor]==null || cost[neighbor]>cost[minCostVertex]+graph[minCostVertex][neighbor]){
                     cost[neighbor] = cost[minCostVertex]+graph[minCostVertex][neighbor];
                     path[neighbor] = minCostVertex;
@@ -125,9 +126,9 @@ public class Dijkastra_WithPath {
         graph[0][3]=6;
         graph[0][4]=5;
         // graph[0][3]=5;
+        // graph[1][0]=5;
         graph[1][2]=3;
         graph[1][3]=1;
-        // graph[1][5]=9;
         graph[1][6]=1;
         graph[2][1]=3;
         graph[2][5]=9;
