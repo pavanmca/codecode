@@ -94,22 +94,22 @@ public class dijkastras {
     //value in cell is the weight from index 0 vertex to index 1 vertex
     private static void buildGraph(Integer[][] graph){
         // graph[0][1]=5;
-        graph[0][3]=6;
-        graph[0][4]=5;
-        graph[1][2]=3;
-        graph[1][3]=1;
-        graph[1][6]=1;
-        graph[2][1]=3;
-        graph[2][5]=9;
-        graph[3][0]=6;
-        graph[3][1]=1;
-        graph[4][0]=5;
-        graph[4][6]=5;
-        graph[4][7]=9;
-        graph[5][1]=9;
-        graph[5][2]=9;
-        graph[6][1]=1;
-        graph[6][4]=5;
-        graph[7][4]=9;
+        graph[0][1]=19;
+        graph[0][2]=15;
+        graph[1][3]=3;
+        graph[2][3]=1;
+        // graph[1][6]=1;
+        // graph[2][1]=3;
+        // graph[2][5]=9;
+        // graph[3][0]=6;
+        // graph[3][1]=1;
+        // graph[4][0]=5;
+        // graph[4][6]=5;
+        // graph[4][7]=9;
+        // graph[5][1]=9;
+        // graph[5][2]=9;
+        // graph[6][1]=1;
+        // graph[6][4]=5;
+        // graph[7][4]=9;
     }
 }

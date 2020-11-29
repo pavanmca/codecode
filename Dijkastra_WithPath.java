@@ -9,13 +9,13 @@ public class Dijkastra_WithPath {
         printGraph(graph);
         Integer[] cost = new Integer[vertices];
         Integer[] path = new Integer[vertices];
-        int start=0;
+        int start=7;
         cost[start]=0;
         path[start]=-1;
         Set<Integer> known = new HashSet<>();
         //run dijkastra's algorithm to generate cost array
         dijkastras_algorithm(graph,cost,known,path);
-        generatePathFromSource(path);
+        generatePathFromSource(path,start);
         //print cost
         System.out.println("Final cost array: ");
         for(int n:cost){
@@ -56,7 +56,7 @@ public class Dijkastra_WithPath {
         }
     }
     //Method to generate paths from source
-    private static void generatePathFromSource(Integer[] path){
+    private static void generatePathFromSource(Integer[] path,int start){
         //List to hold all paths
         List<List<Integer>> allPaths = new ArrayList<>();
         //build path to each vertex
@@ -70,7 +70,7 @@ public class Dijkastra_WithPath {
             }
             //at the end, add source vertex
             if(path[j]==-1)
-            currentPath.add(0,0);
+            currentPath.add(0,start);
             //add currentpath to total paths
             allPaths.add(currentPath);
         }

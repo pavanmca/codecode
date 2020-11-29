@@ -1,5 +1,4 @@
 # codecode
 Algorithms and Data Structures Programs in Java
 1. Dijkastra's shortest/minimum cost path algorithm
-2. Kth Largest Number
-3. K Smallest Numbers
+2. Smallest Window To Be Sorted
