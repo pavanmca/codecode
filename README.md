@@ -6,3 +6,4 @@ Algorithms and Data Structures Programs in Java
 4. Kth Largest Number - heap
 5. K Smallest Numbers - heap
 7. Last Stone Weight - heap
+8. DFS - Graph
