@@ -7,3 +7,5 @@ Algorithms and Data Structures Programs in Java
 5. K Smallest Numbers - heap
 7. Last Stone Weight - heap
 8. DFS - Graph
+9. Topological sorting - Kahn's algo , BFS
+10. Topological sorting - DFS
